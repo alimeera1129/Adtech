@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class InningsMain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the team name: ");
+        String teamName = sc.nextLine();
+
+        System.out.print("Enter session: ");
+        String inningsName = sc.nextLine();
+
+        System.out.print("Enter runs: ");
+        int runs = sc.nextInt();
+
+
+        Innings innings = new Innings();
+        innings.setTeamName(teamName);
+        innings.setInningsName(inningsName);
+        innings.setRuns(runs);
+
+        innings.displayInningsDetails();
+    }
+}
